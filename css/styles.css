@@ -1,0 +1,77 @@
+:root{
+    --verde-ruta: #1e7a4f;
+    --naranja-pedal: #f39a2b;
+    --azul-noche: #14213d;
+    --crema: #faf6ef;
+    --gris-asfalto: #5b6470;
+    
+    --fuente-titulos: "Montserrat", sans-serif;
+    --fuente-texto: "Open Sans", sans-serif;
+
+    --espacio-small: 0.5rem;
+    --espacio-medium: 1rem;
+    --espacio-large: 2rem;
+
+}
+
+body{
+    font-family: var(--fuente-texto);
+    background-color: var(--crema);
+    color: var(--azul-noche);
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fuente-titulos);
+    
+}
+
+#menu a{
+  color: var(--gris-asfalto);
+  text-decoration: none;
+  padding: var(--espacio-small) var(--espacio-medium);
+}
+
+.activo{
+  color: var(--verde-ruta);
+}
+
+
+#menu a.activo{
+  color: var(--verde-ruta);
+  font-weight: 600;
+}
+
+.btn-reserva{
+  background-color: var(--verde-ruta);
+  color: #ffffff;
+  padding: var(--espacio-small) var(--espacio-medium);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#menu a.btn-reserva{
+  color: #ffffff;
+}
+
+#menu a.btn-reserva:hover{
+  background-color: var(--azul-noche);
+  color: #ffffff;
+}
+
+#menu a.btn-reserva:focus{
+  outline: 3px solid var(--naranja-pedal);
+}
+#menu a:hover{
+  color: var(--verde-ruta);
+  text-decoration: underline;
+}
+
+#menu a:focus{
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: 2px;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: 2px solid var(--verde-ruta);
+  border-color: var(--verde-ruta);
+}
