@@ -30,6 +30,107 @@
             <dt>Sabados, domingos y festivos</dt>
             <dd>6:00 am a 2:00 pm</dd>
         </dl>
+<section>
+<h2>Formulario de reserva</h2>
+
+<form action="#" method="post"></form>
+<fieldset>
+    <legend>Tus Datos</legend>
+
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="documento">Numero De Documento</label>
+    <input type="text" id="documento" name="documento" required>
+
+    <label for="correo electronico">Correo Electronico</label>
+    <input type="email" id="correo electronico" name="correo electronico" required>
+
+    <label for="celular">numero de celular</label>
+    <input type="text" id="celular" name="celular" required>
+
+</fieldset>
+
+<fieldset>
+    <legend>Tu Alquiler</legend>
+
+    <label for="fecha">Fecha del Alquiler</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <p>Tipo De Bicicleta</p>
+    <label><input type="radio" name="tipo_bicicleta" value="urbana" required> Urbana</label>
+
+    <label><input type="radio" name="tipo_bicicleta" value="montaña" required> Montaña</label>
+
+    <label><input type="radio" name="tipo_bicicleta" value="eléctrica" required> Eléctrica</label>
+
+    <p>Plan</p>
+      <label><input type="radio" name="plan" value="1_hora" required> 1 hora</label>
+      <label><input type="radio" name="plan" value="medio_dia"> Medio día</label>
+      <label><input type="radio" name="plan" value="dia_completo"> Día completo</label>
+
+      <label for="cantidad">Cantidad de bicicletas</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+      <label for="recorrido">Recorrido guiado</label>
+      <select id="recorrido" name="recorrido" required>
+        <option value="ninguno">Ninguno</option>
+        <option value="ruta1">Ruta 1</option>
+        <option value="ruta2">Ruta 2</option>
+        <option value="ruta3">Ruta 3</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Confirmación</legend>
+
+      <label for="comentarios">Comentarios</label>
+      <textarea id="comentarios" name="comentarios"></textarea>
+
+      <label for="politicas">
+        <input type="checkbox" id="politicas" name="politicas" required>
+        Aceptación de las políticas de alquiler
+      </label>
+    </fieldset>
+
+    <button type="submit">Enviar reserva</button>
+
+  </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+</fieldset>
+
+
+
+
+
+</section>
+        
+
+
+
+
+        </form>
+
+
+        
      </main>
      <footer>
         <h3>Rueda libre</h3>
@@ -39,6 +140,7 @@
         <p>&copy; 2023 Rueda libre. Todos los derechos reservados.</p>
 
     </footer>
+    
 
 
     
