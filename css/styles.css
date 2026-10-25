@@ -1,146 +1,125 @@
+/* === 1. VARIABLES === */
 :root{
-    --verde-ruta: #1e7a4f;
-    --naranja-pedal: #f39a2b;
-    --azul-noche: #14213d;
-    --crema: #faf6ef;
-    --gris-asfalto: #5b6470;
-    
-    --fuente-titulos: "Montserrat", sans-serif;
-    --fuente-texto: "Open Sans", sans-serif;
-
-    --espacio-small: 0.5rem;
-    --espacio-medium: 1rem;
-    --espacio-large: 2rem;
-
+  --fuente-titulos: "Montserrat", sans-serif;
+  --fuente-texto: "Open Sans", sans-serif;
+  --verde-ruta: #2d5a3a;
+  --naranja-pedal: #ff6b35;
+  --gris-asfalto: #666;
+  --crema: #fdf8ef;
+  --azul-noche: #1a2a3a;
+  --espacio-small: 0.5rem;
+  --espacio-medium: 1rem;
+  --espacio-large: 2rem;
 }
 
+/* === 2. BASE === */
+*{
+  box-sizing: border-box;
+}
 body{
-    font-family: var(--fuente-texto);
-    background-color: var(--crema);
-    color: var(--azul-noche);
-    
+  font-family: var(--fuente-texto);
+  background-color: var(--crema);
+  color: var(--azul-noche);
+  margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: var(--fuente-titulos);
-    
+  font-family: var(--fuente-titulos);
+}
+main{
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: var(--espacio-medium);
+  padding-bottom: 80px;
 }
 
-#menu a{
+/* === 3. NAVEGACION === */
+#menu{
   color: var(--gris-asfalto);
+  padding: var(--espacio-small) var(--espacio-medium);
   text-decoration: none;
-  padding: var(--espacio-small) var(--espacio-medium);
 }
-
-.activo{
-  color: var(--verde-ruta);
-}
-
-
-#menu a.activo{
-  color: var(--verde-ruta);
-  font-weight: 600;
-}
-
-.btn-reserva{
-  background-color: var(--verde-ruta);
-  color: #ffffff;
-  padding: var(--espacio-small) var(--espacio-medium);
-  border-radius: 5px;
+#menu li{
   display: inline-block;
 }
-
-#menu a.btn-reserva{
-  color: #ffffff;
-}
-
-#menu a.btn-reserva:hover{
-  background-color: var(--azul-noche);
-  color: #ffffff;
-}
-
-#menu a.btn-reserva:focus{
-  outline: 3px solid var(--naranja-pedal);
-}
-#menu a:hover{
+#menu a.activo{
   color: var(--verde-ruta);
-  text-decoration: underline;
+  font-weight: bold;
 }
-
 #menu a:focus{
   outline: 3px solid var(--naranja-pedal);
   outline-offset: 2px;
 }
 
-input:focus, textarea:focus, select:focus{
-  outline: 2px solid var(--verde-ruta);
-  border-color: var(--verde-ruta);
-}
-
-
-*{
-  box-sizing: border-box;
-}
-
-
-main{
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: var(--espacio-medium);
-}
-
+/* === 4. COMPONENTES - Portada === */
 #portada, .portada, .hero, #inicio{
   min-height: 70vh;
 }
 
-
+/* === 5. COMPONENTES - Tarjetas === */
 .tarjeta, .card, .servicio, .servicios .card{
+  position: relative;
   padding: var(--espacio-medium);
   border: 1px solid var(--gris-asfalto);
   border-radius: 8px;
   margin-bottom: var(--espacio-medium);
 }
-
 .tarjeta img, .card img{
   width: 100%;
   display: block;
 }
+.etiqueta{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--naranja-pedal);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
 
-
+/* === 6. COMPONENTES - Tablas === */
 table{
   width: 100%;
   border-collapse: collapse;
 }
-
 th, td{
   padding: var(--espacio-small);
   border: 1px solid var(--gris-asfalto);
 }
-
 thead th, thead{
   background-color: var(--verde-ruta);
   color: #ffffff;
 }
 
-
+/* === 7. COMPONENTES - Formulario y botones === */
 label{
   display: block;
   margin-bottom: var(--espacio-small);
 }
-
 input, textarea, select{
   width: 100%;
   padding: var(--espacio-small);
 }
-
-.grupo, .campo, .form-group{
-  margin-bottom: var(--espacio-medium);
-}
-
 button, .btn, input[type="submit"]{
   padding: var(--espacio-small) var(--espacio-large);
 }
-
-
-#menu li{
-  display: inline-block;
+button:focus, .btn:focus{
+  outline: 3px solid var(--naranja-pedal);
 }
+
+/* === 8. POSICIONAMIENTO - WhatsApp fijo === */
+.btn-whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+}
+
