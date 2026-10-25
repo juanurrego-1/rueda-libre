@@ -75,3 +75,72 @@ input:focus, textarea:focus, select:focus{
   outline: 2px solid var(--verde-ruta);
   border-color: var(--verde-ruta);
 }
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+main{
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: var(--espacio-medium);
+}
+
+#portada, .portada, .hero, #inicio{
+  min-height: 70vh;
+}
+
+
+.tarjeta, .card, .servicio, .servicios .card{
+  padding: var(--espacio-medium);
+  border: 1px solid var(--gris-asfalto);
+  border-radius: 8px;
+  margin-bottom: var(--espacio-medium);
+}
+
+.tarjeta img, .card img{
+  width: 100%;
+  display: block;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: var(--espacio-small);
+  border: 1px solid var(--gris-asfalto);
+}
+
+thead th, thead{
+  background-color: var(--verde-ruta);
+  color: #ffffff;
+}
+
+
+label{
+  display: block;
+  margin-bottom: var(--espacio-small);
+}
+
+input, textarea, select{
+  width: 100%;
+  padding: var(--espacio-small);
+}
+
+.grupo, .campo, .form-group{
+  margin-bottom: var(--espacio-medium);
+}
+
+button, .btn, input[type="submit"]{
+  padding: var(--espacio-small) var(--espacio-large);
+}
+
+
+#menu li{
+  display: inline-block;
+}

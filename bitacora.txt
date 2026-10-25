@@ -20,3 +20,5 @@ pruebas
 9. Campo: fecha | Dato: 2027-01-01 | Esperado: Rechaza - fuera de rango | Obtenido: Rechazado - "El va
 
 
+//////////////////////
+Medición box-sizing tarjeta: Antes con content-box ancho total 352px (300px contenido + 32px padding + 20px borde). Después con border-box ancho total 320px. Con border-box la imagen al 100% ya no se sale.
