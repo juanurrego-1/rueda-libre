@@ -1,0 +1,22 @@
+
+pruebas
+
+1. Campo: celular | Dato: 3001234567 | Esperado: Acepta (10 digitos y empieza por 3) | Obtenido: Aceptado - CHECK PASA
+
+2. Campo: celular | Dato: 1234567890 | Esperado: Rechaza - debe empezar por 3 | Obtenido: Rechazado - Muestra titulo "10 digitos y debe empezar por 3. Ej: 3001234567"
+
+3. Campo: documento | Dato: 1020304050 | Esperado: Acepta - 10 digitos | Obtenido: Aceptado
+
+4. Campo: documento | Dato: 12ab34 | Esperado: Rechaza - solo numeros | Obtenido: Rechazado - Muestra "Solo numeros, entre 6 y 10 digitos"
+
+5. Campo: documento | Dato: 12345 | Esperado: Rechaza - minimo 6 | Obtenido: Rechazado - Navegador pide minimo 6
+
+6. Campo: nombre | Dato: (vacio) | Esperado: Rechaza - obligatorio | Obtenido: Rechazado - "Completa este campo"
+
+7. Campo: correo | Dato: juan@sinpunto | Esperado: Rechaza - formato invalido | Obtenido: Rechazado - Pide incluir @ y dominio
+
+8. Campo: fecha | Dato: 2026-10-31 | Esperado: Rechaza - fuera de rango | Obtenido: Rechazado - "El valor debe ser mayor o igual a 2026-11-01"
+
+9. Campo: fecha | Dato: 2027-01-01 | Esperado: Rechaza - fuera de rango | Obtenido: Rechazado - "El va
+
+
