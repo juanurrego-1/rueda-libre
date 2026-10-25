@@ -63,6 +63,15 @@ main{
   border-radius: 8px;
   margin-bottom: var(--espacio-medium);
 }
+
+.contenedor-bicicletas{
+  display: flex;
+  gap: 12px;
+  
+}
+.contenedor-bicicletas .tarjeta{
+  flex: 1;
+}
 .tarjeta img, .card img{
   width: 100%;
   display: block;
@@ -122,4 +131,3 @@ button:focus, .btn:focus{
   font-weight: bold;
   z-index: 1000;
 }
-
