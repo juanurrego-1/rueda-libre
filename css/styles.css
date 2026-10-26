@@ -40,26 +40,27 @@ main{
   color: var(--gris-asfalto);
   padding: var(--espacio-small) var(--espacio-medium);
   text-decoration: none;
-
   display: flex;
   justify-content:right;
-  
- 
-  gap: 12px;
+flex-wrap: wrap;
+  gap: 25px;
   
   
 }
-.header{
-  flex-direction: column;
+header{
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: var(--espacio-medium);
+  background-color: var(--verde-ruta);
 
 
 }
-#menu li{
-  display: inline-block;
-}
+
+
 #menu a.activo{
-  color: var(--verde-ruta);
+  color: var(--crema);
   font-weight: bold;
 }
 #menu a:focus{
@@ -154,4 +155,13 @@ button:focus, .btn:focus{
   text-decoration: none;
   font-weight: bold;
   z-index: 1000;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+h1{
+  color: var(--crema);
 }
