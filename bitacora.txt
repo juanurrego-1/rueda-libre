@@ -24,3 +24,7 @@ pruebas
 Medición box-sizing tarjeta: Antes con content-box ancho total 352px (300px contenido + 32px padding + 20px borde). Después con border-box ancho total 320px. Con border-box la imagen al 100% ya no se sale.
 /////////////////////////////
 cuando estrecho el header y el footer la pagina se adapta al espacio (si no cabe baja a la siguiente linea) , no se pierde informacion
+///////////////////////
+A 1280 px se ven las 3 columnas 
+A 900 px se ven 2 columnas el resto pasa a la siguiente linea
+A 500 se ve solo 1

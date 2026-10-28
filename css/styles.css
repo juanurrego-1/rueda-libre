@@ -15,12 +15,18 @@
 /* === 2. BASE === */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   font-family: var(--fuente-texto);
   background-color: var(--crema);
   color: var(--azul-noche);
   margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  
 }
 h1, h2, h3, h4, h5, h6{
   font-family: var(--fuente-titulos);
@@ -29,7 +35,7 @@ main{
   max-width: 64rem;
   margin: 0 auto;
   padding: var(--espacio-medium);
-  padding-bottom: 80px;
+  min-height: 80vh;
 }
 
 /* === 3. NAVEGACION === */
@@ -38,24 +44,32 @@ main{
 
 #menu{
   color: var(--gris-asfalto);
-  padding: var(--espacio-small) var(--espacio-medium);
+  padding: var(--espacio-medium);
   text-decoration: none;
   display: flex;
-  justify-content:right;
-flex-wrap: wrap;
+  justify-content:flex-end;
+  flex-wrap: wrap;
   gap: 25px;
-  
+ color: var(--crema);
   
 }
-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--espacio-medium);
-  background-color: var(--verde-ruta);
 
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 1rem;
+    margin: 0;
+
+    background-color: var(--verde-ruta);
+    flex-wrap: wrap;
 }
 
 
@@ -79,27 +93,44 @@ header{
 }
 
 /* === 5. COMPONENTES - Tarjetas === */
-.tarjeta, .card, .servicio, .servicios .card{
-  position: relative;
+.tarjeta {
+  position:relative;
   padding: var(--espacio-medium);
   border: 1px solid var(--gris-asfalto);
   border-radius: 8px;
   margin-bottom: var(--espacio-medium);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  
+}
+.tarjeta a{
+  margin-top: auto;
+  padding-top: 15px;
+
+
+}
+.tarjeta img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+
 }
 
 .contenedor-bicicletas{
-  display: flex;
-  gap: 12px;
-  
-}
-.contenedor-bicicletas .tarjeta{
-  flex: 1;
-}
-.tarjeta img, .card img{
+  display: grid;
+  gap: 16px;
   width: 100%;
-  display: block;
+  max-width: 1100px;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  justify-content: center;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+  
   
 }
+
 
 .etiqueta{
   position: absolute;
@@ -159,6 +190,7 @@ button:focus, .btn:focus{
 footer{
   display: flex;
   justify-content: space-between;
+  padding:var(--espacio-medium);
 
 
 }
