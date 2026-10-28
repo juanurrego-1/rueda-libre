@@ -51,7 +51,7 @@ main{
   flex-wrap: wrap;
   gap: 25px;
  color: var(--crema);
-  
+  list-style: none;
 }
 
 header {
@@ -71,10 +71,16 @@ header {
     background-color: var(--verde-ruta);
     flex-wrap: wrap;
 }
+#logo{
+
+  max-width: 10%;
+  
+  margin-bottom: var(--espacio-medium);
+}
 
 
 #menu a.activo{
-  color: var(--crema);
+  color: var(--naranja-pedal);
   font-weight: bold;
 }
 #menu a:focus{
@@ -84,6 +90,10 @@ header {
 #menu a:hover{
   color: var(--naranja-pedal);
 
+}
+#menu a{
+  color: var(--crema);
+  text-decoration: none;
 }
 
 
@@ -115,6 +125,12 @@ header {
 width: 100%;
 height: 200px;
 object-fit: cover;
+
+
+}
+img{
+display: flex;
+width: 50%;
 
 }
 
