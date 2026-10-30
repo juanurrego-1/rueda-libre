@@ -31,3 +31,5 @@ A 500 se ve solo 1
 ///////////////////////////////
 para los que necesitaba solo una linea escogi flexbox como :portada , encabezado , pie , fila del formulario.
 para los que necesitaba varias filas escogi grid como: galeria.
+//////////////////////////
+tuve problemas con el tamaño de algunas imagenes porque eran muy grandes y lo soluciones disminuyendoles el tamaño pero lo modifique para todas las imagenes entonces luego tuve un problema con la imagen de la portada porque estaba muy pequeña , entonces tuve que modificarles el tamaño con una clase diferente para cada seccion donde estuviera la imagen.
