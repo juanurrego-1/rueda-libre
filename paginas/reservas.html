@@ -17,7 +17,7 @@
 <body>
     <header>
         <h1>Reservas</h1>
-        <img src="../images/rueda.png" alt="logo" width="150px" height="150px">
+        <img id="logo" src="../images/rueda.png" alt="logo" width="150px" height="150px">
 
         <ul id="menu">
             <li><a href="../index.html">Inicio</a></li>
@@ -33,64 +33,74 @@
             <dt>Sabados, domingos y festivos</dt>
             <dd>6:00 am a 2:00 pm</dd>
         </dl>
-<section>
-<h2>Formulario de reserva</h2>
+<div class="contenedor-inforeserva">
+  <div class="principal"> <section>
+    <h2>Formulario de reserva</h2>
 
-    <form action="#" method="post">
+        <form action="#" method="post">
 
-    <fieldset>
-        <legend>Tus datos</legend>
+        <fieldset>
+            <legend>Tus datos</legend>
 
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80">
+         <div class="contenedor-datos"> 
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80">
+         
+            <label for="documento">Documento</label>
+            <input type="text" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos. Sin puntos ni letras">
+         </div>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
 
-        <label for="documento">Documento</label>
-        <input type="text" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos. Sin puntos ni letras">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3. Ej: 3001234567">
+        </fieldset>
 
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" name="correo" required>
+        <fieldset>
+            <legend>Tu alquiler</legend>
 
-        <label for="celular">Celular</label>
-        <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3. Ej: 3001234567">
-    </fieldset>
+            <label for="fecha">Fecha del alquiler</label>
+            <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
 
-    <fieldset>
-        <legend>Tu alquiler</legend>
+            <p>Tipo de bicicleta</p>
+            <label><input type="radio" name="tipo_bicicleta" value="urbana" required> Urbana</label>
+            <label><input type="radio" name="tipo_bicicleta" value="montana"> Montaña</label>
+            <label><input type="radio" name="tipo_bicicleta" value="electrica"> Eléctrica</label>
 
-        <label for="fecha">Fecha del alquiler</label>
-        <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
+            <p>Plan</p>
+            <label><input type="radio" name="plan" value="1_hora" required> 1 hora</label>
+            <label><input type="radio" name="plan" value="medio_dia"> Medio día</label>
+            <label><input type="radio" name="plan" value="dia_completo"> Día completo</label>
 
-        <p>Tipo de bicicleta</p>
-        <label><input type="radio" name="tipo_bicicleta" value="urbana" required> Urbana</label>
-        <label><input type="radio" name="tipo_bicicleta" value="montana"> Montaña</label>
-        <label><input type="radio" name="tipo_bicicleta" value="electrica"> Eléctrica</label>
+            <label for="cantidad">Cantidad de bicicletas</label>
+            <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
 
-        <p>Plan</p>
-        <label><input type="radio" name="plan" value="1_hora" required> 1 hora</label>
-        <label><input type="radio" name="plan" value="medio_dia"> Medio día</label>
-        <label><input type="radio" name="plan" value="dia_completo"> Día completo</label>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" maxlength="300"></textarea>
 
-        <label for="cantidad">Cantidad de bicicletas</label>
-        <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
+            <label>
+            <input type="checkbox" id="politicas" name="politicas" required>
+            Acepto las políticas de alquiler
+            </label>
+        </fieldset>
 
-        <label for="comentarios">Comentarios</label>
-        <textarea id="comentarios" name="comentarios" maxlength="300"></textarea>
-
-        <label>
-        <input type="checkbox" id="politicas" name="politicas" required>
-        Acepto las políticas de alquiler
-        </label>
-    </fieldset>
-
-    <button type="submit">Enviar reserva</button>
-    </form>
-</section>
-        
+        <button type="submit">Enviar reserva</button>
+        </form>
+    </section> 
+  </div>
+   <div class="contenedor-inf"> 
+    <h2>contacto</h2>
+    <h3>correo</h3>
+    <p>ruedalibre@gmail.com</p>
+    <h3>numero de whatsapp</h3>
+    <p>+57 3006263106</p>
+   </div>
+</div>      
      </main>
      <footer>
         <h3>Rueda libre</h3>
         
-        <p><a href="mailto:ruedalibre@gmail.com">contactanos aqui</a></p>
+       <div id="proporcion"> <p><a href="mailto:ruedalibre@gmail.com">contactanos aqui</a></p> </div>
 
         <p>&copy; 2026 Rueda libre. Todos los derechos reservados.</p>
 

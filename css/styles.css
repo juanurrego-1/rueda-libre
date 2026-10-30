@@ -37,6 +37,11 @@ main{
   padding: var(--espacio-medium);
   min-height: 80vh;
 }
+#portada{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 /* === 3. NAVEGACION === */
 
@@ -146,7 +151,34 @@ width: 50%;
   
   
 }
+.contenedor-galeria{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  justify-content: center;
+  align-items: stretch;
+}
+.contenedor-datos{
+display: flex;
+flex-direction: row;
+gap: 12px;
+}
+.contenedor-inforeserva{
 
+display: flex;
+flex-direction: row;
+gap: 60px;
+
+}
+.principal{
+
+flex: 2;
+}
+.contenedor-inf{
+display: flex;
+flex-direction: column;
+flex: 1;
+
+}
 
 .etiqueta{
   position: absolute;
@@ -159,7 +191,15 @@ width: 50%;
   font-size: 0.8rem;
   font-weight: bold;
 }
+#proporcion{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
+
+
+
+
+}
 /* === 6. COMPONENTES - Tablas === */
 table{
   width: 100%;

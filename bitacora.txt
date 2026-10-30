@@ -28,3 +28,6 @@ cuando estrecho el header y el footer la pagina se adapta al espacio (si no cabe
 A 1280 px se ven las 3 columnas 
 A 900 px se ven 2 columnas el resto pasa a la siguiente linea
 A 500 se ve solo 1
+///////////////////////////////
+para los que necesitaba solo una linea escogi flexbox como :portada , encabezado , pie , fila del formulario.
+para los que necesitaba varias filas escogi grid como: galeria.
