@@ -33,3 +33,7 @@ para los que necesitaba solo una linea escogi flexbox como :portada , encabezado
 para los que necesitaba varias filas escogi grid como: galeria.
 //////////////////////////
 tuve problemas con el tamaño de algunas imagenes porque eran muy grandes y lo soluciones disminuyendoles el tamaño pero lo modifique para todas las imagenes entonces luego tuve un problema con la imagen de la portada porque estaba muy pequeña , entonces tuve que modificarles el tamaño con una clase diferente para cada seccion donde estuviera la imagen.
+//////////////////////////////////
+mi tiempo invertido fue masomenos de 2 horas mientras entendia.
+en css tuve que hacer 22 lineas para dejar las tarjetas como las pedian, mientras que en bootstrap fueron 3 lineas , mas algunas cosas extras en las lineas de img , card , tittle .
+fue mas facil en el sentido de que puede tomar menos tiempo usando lo que ya tiene predeterminado , pero puede ser complicado mientras aprendo como y donde puedo usar cada cosa.

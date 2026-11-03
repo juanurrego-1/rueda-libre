@@ -1,5 +1,5 @@
 /* === 1. VARIABLES === */
-:root{
+:root {
   --fuente-titulos: "Montserrat", sans-serif;
   --fuente-texto: "Open Sans", sans-serif;
   --verde-ruta: #2d5a3a;
@@ -13,92 +13,106 @@
 }
 
 /* === 2. BASE === */
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   font-family: var(--fuente-texto);
   background-color: var(--crema);
   color: var(--azul-noche);
   margin: 0;
   padding: 0;
   width: 100%;
-  
-  
+
+
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fuente-titulos);
 }
-main{
+
+main {
   max-width: 75rem;
   margin: 0 auto;
   padding: var(--espacio-medium);
   min-height: 80vh;
 }
-#portada{
+
+#portada {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #portada img {
-  width:80%;  
-  heigh: auto;
+  width: 80%;
+  height: auto;
 }
+
 /* === 3. NAVEGACION === */
 
 
 
-#menu{
+#menu {
   color: var(--gris-asfalto);
   padding: var(--espacio-medium);
   text-decoration: none;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 25px;
- color: var(--crema);
+  color: var(--crema);
   list-style: none;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-    width: 100%;
-    max-width: none;
-    min-width: 0;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  box-sizing: border-box;
 
-    padding: 1rem;
-    margin: 0;
+  padding: 1rem;
+  margin: 0;
 
-    background-color: var(--verde-ruta);
-    flex-wrap: wrap;
+  background-color: var(--verde-ruta);
+  flex-wrap: wrap;
 }
-#logo{
+
+#logo {
   max-width: 120px;
   margin-bottom: var(--espacio-medium);
 }
 
 
-#menu a.activo{
+#menu a.activo {
   color: var(--naranja-pedal);
   font-weight: bold;
 }
-#menu a:focus{
+
+#menu a:focus {
   outline: 3px solid var(--naranja-pedal);
   outline-offset: 2px;
 }
-#menu a:hover{
+
+#menu a:hover {
   color: var(--naranja-pedal);
 
 }
-#menu a{
+
+#menu a {
   color: var(--crema);
   text-decoration: none;
 }
@@ -108,7 +122,7 @@ header {
 
 /* === 5. COMPONENTES - Tarjetas === */
 .tarjeta {
-  position:relative;
+  position: relative;
   padding: var(--espacio-medium);
   border: 1px solid var(--gris-asfalto);
   border-radius: 8px;
@@ -117,71 +131,74 @@ header {
   height: 100%;
   flex-direction: column;
   align-items: stretch;
-  
+
 }
-.tarjeta a{
+
+.tarjeta a {
   margin-top: auto;
   padding-top: 15px;
 
 
 }
-.tarjeta img{
-width: 100%;
-height: 200px;
-object-fit: cover;
+
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 
 
 }
 
-#Nuestros-servicios img{
-display: flex;
-width: 50%;
+#Nuestros-servicios img {
+  display: flex;
+  width: 50%;
 
 }
 
-.contenedor-bicicletas{
+.contenedor-bicicletas {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-auto-rows: 1fr;
   gap: 16px;
   width: 100%;
   max-width: 1100px;
   justify-content: center;
   align-items: stretch;
-  
-  
-  
+
+
+
 }
-.contenedor-galeria{
+
+.contenedor-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   align-items: stretch;
   gap: 16px;
 }
 
-.contenedor-datos{
-display: flex;
-flex-direction: row;
-gap: 12px;
+.contenedor-datos {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
-.contenedor-inforeserva{
+.contenedor-inforeserva {
 
-display: flex;
-flex-direction:column ;
-gap: 60px;
-
-}
-
-.contenedor-inf{
-display: grid;
-grid-template-columns: 1fr;
-align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 
 }
 
-.etiqueta{
+.contenedor-inf {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: start;
+
+}
+
+.etiqueta {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -195,43 +212,55 @@ align-self: start;
 
 
 /* === 6. COMPONENTES - Tablas === */
-.contenedor-tabla{
-  overflow-x:auto;
+.contenedor-tabla {
+  overflow-x: auto;
 
 }
 
 
-table{
+table {
   width: 100%;
   border-collapse: collapse;
 }
-th, td{
+
+th,
+td {
   padding: var(--espacio-small);
   border: 1px solid var(--gris-asfalto);
 }
-thead th, thead{
+
+thead th,
+thead {
   background-color: var(--verde-ruta);
   color: #ffffff;
 }
 
 /* === 7. COMPONENTES - Formulario y botones === */
-label{
+label {
   display: block;
   margin-bottom: var(--espacio-small);
 }
-input, textarea, select{
+
+input,
+textarea,
+select {
   width: 100%;
   padding: var(--espacio-small);
 }
-button, .btn, input[type="submit"]{
+
+button,
+.btn,
+input[type="submit"] {
   padding: var(--espacio-small) var(--espacio-large);
 }
-button:focus, .btn:focus{
+
+button:focus,
+.btn:focus {
   outline: 3px solid var(--naranja-pedal);
 }
 
 /* === 8. POSICIONAMIENTO - WhatsApp fijo === */
-.btn-whatsapp{
+.btn-whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -243,42 +272,45 @@ button:focus, .btn:focus{
   font-weight: bold;
   z-index: 1000;
 }
-footer{
+
+footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:var(--espacio-medium);
+  padding: var(--espacio-medium);
 
 
 }
-h1{
+
+h1 {
   color: var(--crema);
 }
 
 @media (min-width: 768px) {
 
 
-  header{
+  header {
 
     flex-direction: row;
     justify-content: space-between;
 
   }
 
-  #portada{
+  #portada {
     display: grid;
     grid-template-columns: 2fr 3fr;
 
   }
 
-  .contenedor-inforeserva{
-  flex-direction:row ;
+  .contenedor-inforeserva {
+    flex-direction: row;
   }
 
-  .contenedor-inf{
-  grid-template-columns: 2fr 1fr;
+  .contenedor-inf {
+    grid-template-columns: 2fr 1fr;
   }
-  footer{
+
+  footer {
     flex-direction: row;
   }
 
