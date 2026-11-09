@@ -1,113 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
     
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-
 </head>
-
-
 <body>
     <header>
         <h1>Reservas</h1>
         <img id="logo" src="../images/rueda.png" alt="logo" width="150px" height="150px">
 
-        <ul id="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tarifas.html">Tarifas</a></li>
-            <li><a href="reservas.html" class="activo btn-reservas">Reservas</a></li>
-        </ul>
+        <nav>
+          <ul id="menu">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="tarifas.html">Tarifas</a></li>
+              <li><a href="reservas.html" class="activo btn-reservas">Reservas</a></li>
+          </ul>
+        </nav>
     </header>
-     <main>
-        <dl>
-            <h2>Horario de atencion</h2>
+
+    <main>
+        <dl class="mb-5">
+            <h2>Horario de atención</h2>
             <dt>Lunes a viernes</dt>
             <dd>7:00 am a 7:00 pm</dd>
-            <dt>Sabados, domingos y festivos</dt>
+            <dt>Sábados, domingos y festivos</dt>
             <dd>6:00 am a 2:00 pm</dd>
         </dl>
-<div class="contenedor-inforeserva">
-    <section>
-     <h2>Formulario de reserva</h2>
 
-        <form action="#" method="post">
+        <div class="contenedor-inforeserva">
+            <section>
+             <h2>Formulario de reserva</h2>
 
-        <fieldset>
-            <legend>Tus datos</legend>
+                <form action="#" method="post">
+                    <fieldset class="border p-3 rounded mb-3">
+                        <legend class="float-none w-auto px-2 fw-bold">Tus datos</legend>
 
-         <div class="contenedor-datos"> 
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80">
-         
-            <label for="documento">Documento</label>
-            <input type="text" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos. Sin puntos ni letras">
-         </div>
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" name="correo" required>
+                        <div class="contenedor-datos mb-3"> 
+                            <div class="w-100">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80">
+                            </div>
+                            <div class="w-100">
+                                <label for="documento">Documento</label>
+                                <input type="text" id="documento" name="documento" required minlength="6" maxlength="10" pattern="[0-9]{6,10}" title="Solo números, entre 6 y 10 dígitos. Sin puntos ni letras">
+                            </div>
+                        </div>
 
-            <label for="celular">Celular</label>
-            <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3. Ej: 3001234567">
-        </fieldset>
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required class="mb-3">
 
-        <fieldset>
-            <legend>Tu alquiler</legend>
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3. Ej: 3001234567">
+                    </fieldset>
 
-            <label for="fecha">Fecha del alquiler</label>
-            <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
+                    <fieldset class="border p-3 rounded mb-3">
+                        <legend class="float-none w-auto px-2 fw-bold">Tu alquiler</legend>
 
-            <p>Tipo de bicicleta</p>
-            <label><input type="radio" name="tipo_bicicleta" value="urbana" required> Urbana</label>
-            <label><input type="radio" name="tipo_bicicleta" value="montana"> Montaña</label>
-            <label><input type="radio" name="tipo_bicicleta" value="electrica"> Eléctrica</label>
+                        <label for="fecha">Fecha del alquiler</label>
+                        <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31" class="mb-3">
 
-            <p>Plan</p>
-            <label><input type="radio" name="plan" value="1_hora" required> 1 hora</label>
-            <label><input type="radio" name="plan" value="medio_dia"> Medio día</label>
-            <label><input type="radio" name="plan" value="dia_completo"> Día completo</label>
+                        <p class="fw-semibold mb-1">Tipo de bicicleta</p>
+                        <div class="mb-3">
+                            <label class="d-inline-block me-3"><input type="radio" name="tipo_bicicleta" value="urbana" required> Urbana</label>
+                            <label class="d-inline-block me-3"><input type="radio" name="tipo_bicicleta" value="montana"> Montaña</label>
+                            <label class="d-inline-block"><input type="radio" name="tipo_bicicleta" value="electrica"> Eléctrica</label>
+                        </div>
 
-            <label for="cantidad">Cantidad de bicicletas</label>
-            <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
+                        <p class="fw-semibold mb-1">Plan</p>
+                        <div class="mb-3">
+                            <label class="d-inline-block me-3"><input type="radio" name="plan" value="1_hora" required> 1 hora</label>
+                            <label class="d-inline-block me-3"><input type="radio" name="plan" value="medio_dia"> Medio día</label>
+                            <label class="d-inline-block"><input type="radio" name="plan" value="dia_completo"> Día completo</label>
+                        </div>
 
-            <label for="comentarios">Comentarios</label>
-            <textarea id="comentarios" name="comentarios" maxlength="300"></textarea>
+                        <label for="cantidad">Cantidad de bicicletas</label>
+                        <input type="number" id="cantidad" name="cantidad" required min="1" max="6" class="mb-3">
 
-            <label>
-            <input type="checkbox" id="politicas" name="politicas" required>
-            Acepto las políticas de alquiler
-            </label>
-        </fieldset>
+                        <label for="comentarios">Comentarios</label>
+                        <textarea id="comentarios" name="comentarios" maxlength="300" class="mb-3"></textarea>
 
-        <button type="submit">Enviar reserva</button>
-        </form>
-    </section> 
-  
-   <div class="contenedor-inf"> 
-    <h2>contacto</h2>
-    <h3>correo</h3>
-    <p>ruedalibre@gmail.com</p>
-    <h3>numero de whatsapp</h3>
-    <p>+57 3006263106</p>
-   </div>
-</div>      
-     </main>
-     <footer>
+                        <label class="d-flex align-items-center gap-2">
+                            <input type="checkbox" id="politicas" name="politicas" required style="width: auto;">
+                            Acepto las políticas de alquiler
+                        </label>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-dark w-100">Enviar reserva</button>
+                </form>
+            </section> 
+          
+           <div class="contenedor-inf"> 
+              <div>
+                <h2>Contacto</h2>
+                <h3>Correo</h3>
+                <p>ruedalibre@gmail.com</p>
+                <h3>Número de WhatsApp</h3>
+                <p>+57 3006263106</p>
+              </div>
+           </div>
+        </div>      
+    </main>
+
+    <footer>
         <h3>Rueda libre</h3>
-        
-        <p><a href="mailto:ruedalibre@gmail.com">contactanos aqui</a></p> 
-
+        <p><a href="mailto:ruedalibre@gmail.com" class="text-white text-decoration-none">Contáctanos aquí</a></p> 
         <p>&copy; 2026 Rueda libre. Todos los derechos reservados.</p>
-
     </footer>
-    
 
-<a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp">WhatsApp</a>
-    
+    <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp">WhatsApp</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

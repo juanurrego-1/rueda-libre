@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    
     <link rel="stylesheet" href="css/styles.css">
-
-
-
 </head>
 <body>
     <header>
       <h1>Rueda libre</h1>
-      <img id="logo"src="images/rueda.png" alt="logo">
+      <img id="logo" src="images/rueda.png" alt="logo">
         
       <nav>
         <ul id="menu">
@@ -27,168 +27,162 @@
             <li><a href="paginas/reservas.html" class="btn-reservas">Reservas</a></li>
         </ul>
       </nav>
-
     </header>
-
-    
 
 <main>
   <section id="portada">
     <div>
-      <h2>¿Quienes somos?</h2>
+      <h2>¿Quiénes somos?</h2>
       <h3>Rueda libre</h3>
-      <p>somos empresa lider en alquiler de bicicletas ubicada en medellin con mas de 10 años de experiencia en el mercado</p>
-      <a href="#encuentranos">encuentranos</a>
+      <p>Somos empresa líder en alquiler de bicicletas ubicada en Medellín con más de 10 años de experiencia en el mercado.</p>
+      <a href="#encuentranos" class="btn btn-outline-dark mt-2">Encuéntranos</a>
     </div>
-    <img src="images/portada.png" alt="recorrido en bici con vista a medellin">
+    <img src="images/portada.png" alt="recorrido en bici con vista a medellin" class="img-fluid rounded">
   </section>
 
   <br>
 
   <section>
-    
-      <h2>Nuestra flota</h2>  
-    
-    
-    <a href="paginas/reservas.html">no te quedes sin tu cupo</a>
+    <h2>Nuestra flota</h2>  
+    <a href="paginas/reservas.html">No te quedes sin tu cupo</a>
     <p>Escoge la bicicleta a tu gusto, incluye casco y candado</p> 
 
     <div class="contenedor-bicicletas">
-      
-      <div class="tarjeta">
-        <h3>Urbana clasica</h3>
-        <p>Comoda y liviana para ciclorutas.</p>
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Urbana clásica</h3>
+        <p>Cómoda y liviana para ciclorutas.</p>
         <img src="images/urbana.png" alt="bici urbana">
-        <p>precio por hora = 10.000</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
-      </div>
-      <div class="tarjeta">
-        <h3>urbana plegable</h3>
-        <p>Para trocha y aventura</p>
-        <img src="images/plegable.png" alt="bici urbana plegable">
-        <p>precio por hora = 12.000</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <p>Precio por hora = 10.000</p>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>
 
-      <div class="tarjeta">
-        <h3>Montaña trail</h3>
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Urbana plegable</h3>
+        <p>Para trocha y aventura</p>
+        <img src="images/plegable.png" alt="bici urbana plegable">
+        <p>Precio por hora = 12.000</p>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+      </div>
+
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Montaña trail</h3>
         <p>Suspensión delantera y 21 cambios para las subidas.</p>
         <img src="images/montaña.png" alt="bici montaña">
-        <P>Precio por hora = 15.000</P>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <p>Precio por hora = 15.000</p>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>
-      <div class="tarjeta">
-        <h3>gravel aventura</h3>
+
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Gravel aventura</h3>
         <p>Para rutas mixtas de asfalto y destapado</p>
         <img src="images/gravel.png" alt="bici para gravel">
         <p>Precio por hora = 18.000</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>
 
-      <div class="tarjeta">
+      <div class="tarjeta shadow-sm">
         <span class="etiqueta">Nuevo</span>
-        <h3>Eléctrica urbana</h3>
+        <h3 class="h5">Eléctrica urbana</h3>
         <p>Asistencia eléctrica con 45 km de autonomía.</p>
         <img src="images/electrica.png" alt="bici electrica">
         <p>Precio por hora = 25.000</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>
       
-      
-      <div class="tarjeta">
-        <h3>infantil</h3>
-        <p>para niños de 6 a 10 años</p>
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Infantil</h3>
+        <p>Para niños de 6 a 10 años</p>
         <img src="images/niños.png" alt="bici para niños">
         <p>Precio por hora = 8.000</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>  
 
-      <div class="tarjeta">
-        <h3>Tandem</h3>
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Tándem</h3>
         <p>Para dos personas; perfecta para pasear en pareja</p>
-        <img src="images/tandem.png" alt="bici para niños">
+        <img src="images/tandem.png" alt="bici tandem">
         <p>Precio por hora = 20.000</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>  
     </div>
   </section>  
+
   <section>
     <h2>Recorridos</h2>
     <div class="contenedor-galeria">
-      
-      <div class="tarjeta">
-        <h3>Rios y parques</h3>
-      
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Ríos y parques</h3>
         <img src="images/rios.png" alt="recorrido por rios y parques">
-        <p>nivel = facil</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
-      </div>
-      <div class="tarjeta">
-        <h3>sabores de barrio</h3>
-        
-        <img src="images/barrio.png" alt="recorrido por barrios de medellin">
-        <p>nivel = medio</p>
-        <a href="paginas/reservas.html">reservar ahora</a>
+        <p>Nivel = Fácil</p>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
       </div>
 
-      <div class="tarjeta">
-        <h3>Reto las palmas</h3>
-        
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Sabores de barrio</h3>
+        <img src="images/barrio.png" alt="recorrido por barrios de medellin">
+        <p>Nivel = Medio</p>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+      </div>
+
+      <div class="tarjeta shadow-sm">
+        <h3 class="h5">Reto las Palmas</h3>
         <img src="images/palmas.png" alt="recorrido por las palmas">
-        <P>nivel = dificil</P>
-        <a href="paginas/reservas.html">reservar ahora</a> 
+        <p>Nivel = Difícil</p>
+        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a> 
       </div>
     </div>
   </section>
-  <section id="Nuestros-servicios">
+
+  <section id="Nuestros-servicios" class="my-5">
       <h2>Nuestros servicios</h2>
-        <h3>Recorridos guiados</h3>
-        <p>Recorrido por las mejores partes de Medellín en el cual podrás disfrutar de muy buenas vistas y buena gastronomía en el recorrido</p>
-        <img src="images/ruta.png" alt="una de las rutas">
-      
+      <div class="row g-4 align-items-center mb-4">
+        <div class="col-12 col-md-6">
+          <h3>Recorridos guiados</h3>
+          <p>Recorrido por las mejores partes de Medellín en el cual podrás disfrutar de muy buenas vistas y buena gastronomía en el recorrido</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="images/ruta.png" alt="una de las rutas" class="img-fluid rounded">
+        </div>
+      </div>
 
-        
-        <h3>Taller básico</h3>
-        <p>Te ofrecemos un curso de corta duración en el cual podrás aprender como hacerle mantenimiento general a tu bicicleta y mantenerla al día</p>
-        <img src="images/taller.png" alt="taller de mantenimiento">
-        
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-md-6 order-md-2">
+          <h3>Taller básico</h3>
+          <p>Te ofrecemos un curso de corta duración en el cual podrás aprender cómo hacerle mantenimiento general a tu bicicleta y mantenerla al día</p>
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <img src="images/taller.png" alt="taller de mantenimiento" class="img-fluid rounded">
+        </div>
+      </div>
   </section>   
- 
 
-  <h2>¿Como alquilar?</h2>
-  <ol>
-      <li>ponerte en contacto ,dale click al link de abajo</li>
-      <li>cuentanos tu horario , bicicleta y ruta de preferencia</li>
-      <li>escribe tus dato para reserva</li>
-      <li>cancela el monto pactado con el asesor para comfirmar la reserva</li>
-      <li>disfruta de tu servicio</li>
+  <h2>¿Cómo alquilar?</h2>
+  <ol class="mb-4">
+      <li>Ponte en contacto, dale click al link de abajo</li>
+      <li>Cuéntanos tu horario, bicicleta y ruta de preferencia</li>
+      <li>Escribe tus datos para reserva</li>
+      <li>Cancela el monto pactado con el asesor para confirmar la reserva</li>
+      <li>Disfruta de tu servicio</li>
   </ol>
-  <a href="mailto:ruedalibre@gmail.com">click aqui</a>
+  <a href="mailto:ruedalibre@gmail.com" class="btn btn-dark">Click aquí</a>
 
-  <br>
+  <br><br>
 
-  <h2>Encuentranos</h2>
-  <p>calle 87 </p>
-  <a href="https://www.google.com/maps/@6.2193664,-75.5882881,15z?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"target="_blank">nuestra ubicacion</a>
-
+  <section id="encuentranos">
+    <h2>Encuéntranos</h2>
+    <p>Calle 87</p>
+    <a href="https://www.google.com/maps/@6.2193664,-75.5882881,15z?entry=ttu" target="_blank" class="btn btn-primary">Nuestra ubicación</a>
+  </section>
 </main>
-    <footer>
-      
-        <p>&copy; 2026 Rueda libre. Todos los derechos reservados.</p>
-        
-        
-        <p><a href="mailto:ruedalibre@gmail.com">contactanos aqui</a></p>
 
-        <p> Horario de atencion
-            Lunes a viernes
-            7:00 am a 7:00 pm
-            <br>
-            Sabados, domingos y festivos
-            6:00 am a 2:00 pm</p>
+    <footer>
+        <p>&copy; 2026 Rueda libre. Todos los derechos reservados.</p>
+        <p><a href="mailto:ruedalibre@gmail.com" class="text-white text-decoration-none">Contáctanos aquí</a></p>
+        <p>Horario de atención:<br>
+            Lunes a viernes: 7:00 am a 7:00 pm<br>
+            Sábados, domingos y festivos: 6:00 am a 2:00 pm</p>
         
-      <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp">WhatsApp</a>
+        <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp">WhatsApp</a>
     </footer>
 
-      
-</body>
-</html>
+   <script src="
