@@ -7,12 +7,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -34,7 +31,7 @@
     <div>
       <h2>¿Quiénes somos?</h2>
       <h3>Rueda libre</h3>
-      <p>Somos empresa líder en alquiler de bicicletas ubicada en Medellín con más de 10 años de experiencia en el mercado.</p>
+      <p>Somos empresa líder en alquiler de bicicletas ubicada en Medellín con más de 10 años de experiencia en el mercado</p>
       <a href="#encuentranos" class="btn btn-outline-dark mt-2">Encuéntranos</a>
     </div>
     <img src="images/portada.png" alt="recorrido en bici con vista a medellin" class="img-fluid rounded">
@@ -47,88 +44,111 @@
     <a href="paginas/reservas.html">No te quedes sin tu cupo</a>
     <p>Escoge la bicicleta a tu gusto, incluye casco y candado</p> 
 
-    <div class="contenedor-bicicletas">
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Urbana clásica</h3>
-        <p>Cómoda y liviana para ciclorutas.</p>
-        <img src="images/urbana.png" alt="bici urbana">
-        <p>Precio por hora = 10.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>
+    <!-- Grilla de Bootstrap para asegurar exactamente 4 tarjetas por fila en escritorio -->
+    <div class="container px-0 my-3">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100">
+            <h3 class="h5">Urbana clásica</h3>
+            <p>Cómoda y liviana para ciclorutas.</p>
+            <img src="images/urbana.png" alt="bici urbana">
+            <p>Precio por hora = 10.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>
 
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Urbana plegable</h3>
-        <p>Para trocha y aventura</p>
-        <img src="images/plegable.png" alt="bici urbana plegable">
-        <p>Precio por hora = 12.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100">
+            <h3 class="h5">Urbana plegable</h3>
+            <p>Para trocha y aventura</p>
+            <img src="images/plegable.png" alt="bici urbana plegable">
+            <p>Precio por hora = 12.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>
 
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Montaña trail</h3>
-        <p>Suspensión delantera y 21 cambios para las subidas.</p>
-        <img src="images/montaña.png" alt="bici montaña">
-        <p>Precio por hora = 15.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100">
+            <h3 class="h5">Montaña trail</h3>
+            <p>Suspensión delantera y 21 cambios para las subidas.</p>
+            <img src="images/montaña.png" alt="bici montaña">
+            <p>Precio por hora = 15.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>
 
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Gravel aventura</h3>
-        <p>Para rutas mixtas de asfalto y destapado</p>
-        <img src="images/gravel.png" alt="bici para gravel">
-        <p>Precio por hora = 18.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100">
+            <h3 class="h5">Gravel aventura</h3>
+            <p>Para rutas mixtas de asfalto y destapado</p>
+            <img src="images/gravel.png" alt="bici para gravel">
+            <p>Precio por hora = 18.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>
 
-      <div class="tarjeta shadow-sm">
-        <span class="etiqueta">Nuevo</span>
-        <h3 class="h5">Eléctrica urbana</h3>
-        <p>Asistencia eléctrica con 45 km de autonomía.</p>
-        <img src="images/electrica.png" alt="bici electrica">
-        <p>Precio por hora = 25.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>
-      
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Infantil</h3>
-        <p>Para niños de 6 a 10 años</p>
-        <img src="images/niños.png" alt="bici para niños">
-        <p>Precio por hora = 8.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>  
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100 position-relative">
+            <span class="etiqueta">Nuevo</span>
+            <h3 class="h5">Eléctrica urbana</h3>
+            <p>Asistencia eléctrica con 45 km de autonomía.</p>
+            <img src="images/electrica.png" alt="bici electrica">
+            <p>Precio por hora = 25.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100">
+            <h3 class="h5">Infantil</h3>
+            <p>Para niños de 6 a 10 años</p>
+            <img src="images/niños.png" alt="bici para niños">
+            <p>Precio por hora = 8.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>  
 
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Tándem</h3>
-        <p>Para dos personas; perfecta para pasear en pareja</p>
-        <img src="images/tandem.png" alt="bici tandem">
-        <p>Precio por hora = 20.000</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
-      </div>  
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="tarjeta h-100">
+            <h3 class="h5">Tándem</h3>
+            <p>Para dos personas; perfecta para pasear en pareja</p>
+            <img src="images/tandem.png" alt="bici tandem">
+            <p>Precio por hora = 20.000</p>
+            <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+          </div>
+        </div>  
+      </div>
     </div>
   </section>  
 
   <section>
     <h2>Recorridos</h2>
-    <div class="contenedor-galeria">
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Ríos y parques</h3>
-        <img src="images/rios.png" alt="recorrido por rios y parques">
-        <p>Nivel = Fácil</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+    <div class="row g-3">
+      <div class="col-12 col-md-4">
+        <div class="tarjeta h-100">
+          <h3 class="h5">Ríos y parques</h3>
+          <img src="images/rios.png" alt="recorrido por rios y parques">
+          <p>Nivel = Fácil</p>
+          <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+        </div>
       </div>
 
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Sabores de barrio</h3>
-        <img src="images/barrio.png" alt="recorrido por barrios de medellin">
-        <p>Nivel = Medio</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+      <div class="col-12 col-md-4">
+        <div class="tarjeta h-100">
+          <h3 class="h5">Sabores de barrio</h3>
+          <img src="images/barrio.png" alt="recorrido por barrios de medellin">
+          <p>Nivel = Medio</p>
+          <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a>
+        </div>
       </div>
 
-      <div class="tarjeta shadow-sm">
-        <h3 class="h5">Reto las Palmas</h3>
-        <img src="images/palmas.png" alt="recorrido por las palmas">
-        <p>Nivel = Difícil</p>
-        <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a> 
+      <div class="col-12 col-md-4">
+        <div class="tarjeta h-100">
+          <h3 class="h5">Reto las Palmas</h3>
+          <img src="images/palmas.png" alt="recorrido por las palmas">
+          <p>Nivel = Difícil</p>
+          <a href="paginas/reservas.html" class="btn btn-dark btn-sm">Reservar ahora</a> 
+        </div>
       </div>
     </div>
   </section>
@@ -185,4 +205,6 @@
         <a href="https://wa.me/573000000000" target="_blank" class="btn-whatsapp">WhatsApp</a>
     </footer>
 
-   <script src="
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
